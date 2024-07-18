@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form {
+      background-color: rgba(156, 172, 160, 0.226);
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      margin: auto;
+      border-radius: 10px;
+
+    }
+    .email {
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+     
+
+
+    }
+    .e {
+      padding: 8px;
+      border: none;
+      position: a;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      border-radius:  10px;
+    }
+    table, th, td {
+      border:1px solid black;
+    }
+    .p {
+      color: rgb(169, 207, 240);
+      text-align: center;
+      font-size: 30px;
+    }
+    .bs {
+      background-color: rgb(99, 83, 190);
+      padding:  10px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+    }
+    .bl {
+      background-color: rgb(83, 190, 149);
+      padding:  10px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+    }
+    .already {
+      font-style: italic;
+      font-size: 15px;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div>
+    
+    <form>
+      <div class="p">
+        <p>Sign Up for Entry</p>
+      </div>
+      <div class="fname">
+        <label for="fname">Full Name:</label>
+        <input type="text" placeholder="your name" class="e">
+      </div> <br>
+      <div class="email">
+        <label for="email">Email:</label>
+        <input type="email" placeholder=" email" class="e">
+      </div> <br>
+      <div class="pw">
+        <label for="pw">Password:</label>
+        <input type="password" class="e">
+      </div> <br>
+      <div class="age">
+        <label for="age" class="e">Age:</label>
+        <input type="Number" class="e" min="18" max="30">
+      </div> <br>
+      <div class="gender">
+        <label for="gender">Gender:</label>
+        <input type="radio" id="Male" name="Gender" value="male"> Male
+        <input type="radio" id="female" name="Gender" value="female"> Female 
+        <input type="radio" id="Other" name="Gender" value="female"> Other 
+      </div> <br>
+      <div>
+        <label for="browser">Browser</label>
+        <input type="text" list="browser" class="e">
+        <datalist id="browser">
+          <option value="Opera">
+          <option value="Mozilla">
+          <option value="Safari">
+          <option value="Chrome">
+        </datalist>
+      </div> <br>
+      <div>
+        <label for="education">Education</label>
+        <select name="education" id="education" class="e">
+          <option value="a">a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+          <option value="e">e</option>
+        </select>
+      </div> <br>
+      <div>
+        <label for="date"  >Date of Birth</label>
+        <input type="date" id="date" name="date" min="2000-01-02" max="1979-12-31" class="e">
+      </div> <br>
+      <div>
+        <button class="bs"> Sign In</button>
+          <label for="label" class="already">Already have a account?</label>
+        <button class="bl">Log In</button>
+      </div>
+      
+    
+    </form>
+    <div>
+      <table>
+        <ul>
+          <li> One</li>
+          <li>Two</li>
+          <li> three</li>
+        </ul>
+        <ol>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ol>
+      </table>
+    </div>
+    <div>
+      <table>
+        <thead>
+          <th> Name</th>
+          <th>Age</th>
+        </thead>
+        <tr>
+          <td>Manika</td>
+          <td> 0</td>
+        </tr>
+        <tr>
+          <td> Bipin</td>
+          <td> 25</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
